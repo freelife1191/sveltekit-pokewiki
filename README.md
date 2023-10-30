@@ -8,4 +8,13 @@
 
 - 포켓몬 API: https://pokeapi.co/
     - https://pokeapi.co/api/v2/pokemon
+
+## 1. 프로젝트 셋업
+
 - tailwindcss svelteKit: https://tailwindcss.com/docs/guides/sveltekit
+
+tailwindcss 설치
+```bash
+$ npm install -D tailwindcss postcss autoprefixer
+$ npx tailwindcss init -p
+```
