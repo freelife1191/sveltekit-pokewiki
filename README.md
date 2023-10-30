@@ -18,3 +18,10 @@ tailwindcss 설치
 $ npm install -D tailwindcss postcss autoprefixer
 $ npx tailwindcss init -p
 ```
+
+## 2. 사이트 초반 작업
+
+- 타이틀
+- 메인페이지 꾸미기
+- 네비게이션
+- About 페이지
