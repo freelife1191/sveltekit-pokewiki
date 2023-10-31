@@ -14,6 +14,7 @@
 - tailwindcss svelteKit: https://tailwindcss.com/docs/guides/sveltekit
 
 tailwindcss 설치
+
 ```bash
 $ npm install -D tailwindcss postcss autoprefixer
 $ npx tailwindcss init -p
@@ -30,13 +31,16 @@ $ npx tailwindcss init -p
 
 - poke API: https://pokeapi.co/api/v2/pokemon
 
-아래의 SvelteKit Loading Data를 사용하지 않고 [Promise.all()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 사용
+아래의 SvelteKit Loading Data를 사용하지
+않고 [Promise.all()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 사용
+
 - Loading Data: https://kit.svelte.dev/docs/load
 
 Store에 데이터를 저장하여 모든 컴포넌트에서 사용할 수 있도록 구현
 ![store](attachments/20231031084650.png)
 
 150개의 Poketmon 데이터 가져오기
+
 ```JSON
 GET https://pokeapi.co/api/v2/pokemon?limit=150
 ```
@@ -44,8 +48,13 @@ GET https://pokeapi.co/api/v2/pokemon?limit=150
 ## 4. 포켓몬 한국어 이름 가져오기
 
 포켓몬 정보 데이터 가져오기
+
 ```JSON
 GET https://pokeapi.co/api/v2/pokemon-species
 ```
 
 포켓몬 정보에서 한국어 이름을 추출해서 가져옴
+
+## 5. 포켓몬 카드 컴포넌트 만들기
+
+tailwindcss 카드 컴포넌트 적용
