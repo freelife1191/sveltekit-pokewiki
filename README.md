@@ -39,7 +39,7 @@ $ npx tailwindcss init -p
 Store에 데이터를 저장하여 모든 컴포넌트에서 사용할 수 있도록 구현
 ![store](attachments/20231031084650.png)
 
-150개의 Poketmon 데이터 가져오기
+150개의 Pokemon 데이터 가져오기
 
 ```JSON
 GET https://pokeapi.co/api/v2/pokemon?limit=150
@@ -62,3 +62,7 @@ tailwindcss 카드 컴포넌트 적용
 ## 6. 검색창 구현
 
 - [`$`를 사용한 reactive 검색 구현 참고](https://svelte.dev/docs/svelte-components#script-3-$-marks-a-statement-as-reactive)
+
+## 7. 포켓몬 상세페이지 구현
+
+`+page.js`로 API 데이터 Load 및 Store 데이터를 가져와서 구현

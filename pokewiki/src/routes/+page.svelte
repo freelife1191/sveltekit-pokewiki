@@ -8,7 +8,7 @@
 
   // reactivity
   $: {
-    console.log(searchTerm)
+    // console.log(searchTerm)
     if (searchTerm) {
       filterPokemon = $arrPokemon.filter((pokemon) => pokemon.name.includes(searchTerm))
     } else {

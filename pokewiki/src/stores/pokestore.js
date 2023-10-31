@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import {writable} from "svelte/store";
 
 export const arrPokemon = writable([])
 
@@ -23,7 +23,7 @@ const fetchPokemon = async () => {
 const koreanNames = []
 const urls = []
 
-for (let i=0; i < fetchNum; i++) {
+for (let i = 0; i < fetchNum; i++) {
   let url = `https://pokeapi.co/api/v2/pokemon-species/${i + 1}`
   urls.push(url);
 }
@@ -33,7 +33,6 @@ let requests = urls.map((url) => fetch(url));
 Promise.all(requests)
   .then((responses) => Promise.all(responses.map((res) => res.json())))
   .then((results) => {
-    console.log(results)
     for (let result of results) {
       koreanNames.push(result.names[2].name)
     }
