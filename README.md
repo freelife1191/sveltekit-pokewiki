@@ -66,3 +66,8 @@ tailwindcss 카드 컴포넌트 적용
 ## 7. 포켓몬 상세페이지 구현
 
 `+page.js`로 API 데이터 Load 및 Store 데이터를 가져와서 구현
+
+## 8. 스벨트 애니메이션
+
+- **fade** 효과 적용
+    - https://svelte.dev/docs/svelte-transition#fade
