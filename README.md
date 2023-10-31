@@ -58,3 +58,7 @@ GET https://pokeapi.co/api/v2/pokemon-species
 ## 5. 포켓몬 카드 컴포넌트 만들기
 
 tailwindcss 카드 컴포넌트 적용
+
+## 6. 검색창 구현
+
+- [`$`를 사용한 reactive 검색 구현 참고](https://svelte.dev/docs/svelte-components#script-3-$-marks-a-statement-as-reactive)
