@@ -25,3 +25,18 @@ $ npx tailwindcss init -p
 - 메인페이지 꾸미기
 - 네비게이션
 - About 페이지
+
+## 3. poke API 에서 데이터 가져오기
+
+- poke API: https://pokeapi.co/api/v2/pokemon
+
+아래의 SvelteKit Loading Data를 사용하지 않고 [Promise.all()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 사용
+- Loading Data: https://kit.svelte.dev/docs/load
+
+Store에 데이터를 저장하여 모든 컴포넌트에서 사용할 수 있도록 구현
+![store](attachments/20231031084650.png)
+
+150개의 Poketmon 데이터 가져오기
+```JSON
+GET https://pokeapi.co/api/v2/pokemon?limit=150
+```
